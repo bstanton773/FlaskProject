@@ -18,6 +18,10 @@ def index():
         {
             'title': {'main': 'I love C#', 'sub': 'this is a happy story'},
             'body': 'C# can do some things. However, it is very easy'
+        },
+        {
+            'title': {'main': 'I love C++', 'sub': 'this is a happy story'},
+            'body': 'C++ can do all things. However, it is very stinky'
         }
     ]
     return render_template('index.html', user=user, posts = posts)
