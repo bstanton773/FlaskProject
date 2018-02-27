@@ -20,8 +20,12 @@ def index():
             'body': 'C# can do some things. However, it is very easy'
         },
         {
+            'title': {'main': 'I hate C#', 'sub': 'this is a happy story'},
+            'body': 'C# can do no things. However, it is very stupid!'
+        },
+        {
             'title': {'main': 'I love C++', 'sub': 'this is a happy story'},
-            'body': 'C++ can do all things. However, it is very stinky'
+            'body': 'C++ can do all things. However, it is very stinky!'
         }
     ]
     return render_template('index.html', user=user, posts = posts)
