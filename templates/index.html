@@ -7,8 +7,9 @@
     <body>
         <h1>Hello, {{user.username}}!</h1>
 
-        <div><h1>{{posts[0].title.main}}</h1>{{posts[0].body}}</div>
-        <div><h1>{{posts[1].title.main}}</h1>{{posts[1].body}}</div>
+        {% for post in posts %}
+        <div><h1>{{post.title.main}}</h1>{{post.body}}</div>
+        {% endfor %}
 
     </body>
 </html>
