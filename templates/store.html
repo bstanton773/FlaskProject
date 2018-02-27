@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
     {% block content %}
-    <h1>Welcome to the store!</h1>
+        <h1>Welcome to the store!</h1>
 
-    {% for item in items %}
+        {% for item in items %}
         <div><h1>{{item.title}}</h1>{{item.price}}</div>
         {% endfor %}
 
