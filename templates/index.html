@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        {% if title %}
-        <title>{{ title }} - ! </title>
-        {% else %}
-        <title>Welcome!</title>
-        {% endif %}
-    </head>
-    <body>
+{% extends "base.html" %}
+
+    {% block content %}
         <h1>Hello, {{user.username}}!</h1>
 
         {% for post in posts %}
         <div><h1>{{post.title.main}}</h1>{{post.body}}</div>
         {% endfor %}
 
-    </body>
-</html>
+    {% endblock %}

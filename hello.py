@@ -42,7 +42,7 @@ def store():
             'price': 1000
         }
     ]
-    return render_template('store.html', items=items)
+    return render_template('store.html', items=items, title='A title 2')
 
 app.run()
 
