@@ -1,9 +1,9 @@
-from app import app
+from app import app2
 from app.forms import LoginForm
 from flask import render_template, redirect, flash
 
-@app.route('/')
-@app.route('/index')
+@app2.route('/')
+@app2.route('/index')
 def index():
     user = {'username': 'Brian'}
     posts = [
@@ -26,7 +26,7 @@ def index():
     ]
     return render_template('index.html', user=user, posts = posts, title='A title')
 
-@app.route('/store')
+@app2.route('/store')
 def store():
     items = [
         {
@@ -44,7 +44,7 @@ def store():
     ]
     return render_template('store.html', items=items, title='A title 2')
 
-@app.route('/login', methods = ['GET', 'POST'])
+@app2.route('/login', methods = ['GET', 'POST'])
 def login():
     form = LoginForm()
     if form.validate_on_submit():
