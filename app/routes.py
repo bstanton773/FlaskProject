@@ -47,7 +47,7 @@ def login():
         login_user(user, remember=form.remember_me.data)
         return redirect(url_for('index'))
 
-    return render_template('login.html', title='Sign In', form=form) # GET or submit validate Flaid
+    return render_template('login.html', title='Sign In', form=form) # GET or submit validate Failed
 
 @app2.route('/logout')
 def logout():

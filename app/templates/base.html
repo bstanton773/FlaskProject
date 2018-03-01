@@ -13,9 +13,9 @@
         <div><a href = "/store">STORE</a></div>
 
         {% if current_user.is_anonymous %}
-        <a href="{{ url_for('login') }}">Login</a>
+        <a href="{{ url_for('login') }}">LOGIN</a>
         {% else %}
-        <a href="{{ url_for('logout') }}">Logout</a>
+        <a href="{{ url_for('logout') }}">LOGOUT</a>
         <div>Hello, {{current_user.username}}!</div>
         {% endif %}
 
